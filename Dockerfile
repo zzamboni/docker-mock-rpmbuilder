@@ -7,7 +7,7 @@ RUN yum clean all
 RUN yum -y update
 
 #Install Mock Package
-RUN yum -y install mock 
+RUN yum -y install mock rpm-build
 
 #Configure users
 RUN useradd -u 1000 builder
